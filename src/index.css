@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Lilita One';
+    src: url('/LilitaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/Nunito-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nunito';
+    font-weight: bold;
+    src: url('/Nunito-Bold.ttf') format('truetype');
+}
