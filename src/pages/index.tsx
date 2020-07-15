@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Box, Button, Flex, Heading, Icon, Image, Input, InputGroup, InputLeftElement, Link, Text } from '@chakra-ui/core';
 
+import InputWithIcon from '../components/input/InputWithIcon';
+
 const IndexPage = () => (
     <Flex direction='row' height='100%'>
         <Flex direction='column' flexGrow={1} flexBasis='calc(50% - 96px)' alignItems='center' justifyContent='center' marginX={32}>
@@ -20,14 +22,16 @@ const IndexPage = () => (
                 Log in to view and update your pet profile with the latest information.
             </Text>
             <Flex direction='column' alignItems='center' width='65%' marginY={3}>
-                <InputGroup size='lg' width='100%' marginY={2}>
-                    <InputLeftElement color='petcode.neutral.400' children={ <Icon size='25px' name='username' color='petcode.neutral.400'/> }/>
-                    <Input rounded='full' placeholder='Username' color='petcode.neutral.700' borderColor='petcode.neutral.400' focusBorderColor='petcode.neutral.500'/>
-                </InputGroup>
-                <InputGroup size='lg' width='100%' marginY={2}>
-                    <InputLeftElement children={ <Icon size='25px' name='password' color='petcode.neutral.400'/> }/>
-                    <Input rounded='full' placeholder='Password' color='petcode.neutral.700' borderColor='petcode.neutral.400' focusBorderColor='petcode.neutral.500'/>
-                </InputGroup>
+                <InputWithIcon
+                    iconName='username'
+                    inputGroupProps={ { width: '100%', marginY: 2 } }
+                    inputProps={ { placeholder: 'Username' } }
+                />
+                <InputWithIcon
+                    iconName='password'
+                    inputGroupProps={ { width: '100%', marginY: 2 } }
+                    inputProps={ { type: 'password', placeholder: 'Password' } }
+                />
                 <Text color='petcode.blue.400' fontSize='lg' alignSelf='flex-end' margin={0}>
                     <Link>Forgot Password?</Link>
                 </Text>
