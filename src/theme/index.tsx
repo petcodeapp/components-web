@@ -20,7 +20,18 @@ export default {
     colors: {
         ...theme.colors,
         petcode: {
-            blue: '#51BCDA',
+            blue: {
+              50: '#ddfaff',
+              100: '#b8e8f6',
+              200: '#91d8eb',
+              300: '#69c6e1',
+              400: '#42b6d7',
+              500: '#289dbd',
+              600: '#197a94',
+              700: '#09576b',
+              800: '#003542',
+              900: '#00131b',
+            },
             yellow: '#FBC658',
             teal: '#51CBCE',
             neutral: {
@@ -31,7 +42,7 @@ export default {
                 500: '#A0AEC0',
                 600: '#718096',
                 700: '#4A5568'
-            },
+            }
         }
     },
     icons: {
