@@ -1,25 +1,4 @@
-@font-face {
-    font-family: 'Lilita One';
-    src: url('/fonts/LilitaOne-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Nunito';
-    font-weight: bold;
-    src: url('/fonts/Nunito-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Nunito';
-    font-weight: 300;
-    src: url('/fonts/Nunito-Light.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Nunito';
-    font-weight: normal;
-    src: url('/fonts/Nunito-Regular.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@300;400;700&display=swap');
 
 html, body, #root {
     margin: 0;
