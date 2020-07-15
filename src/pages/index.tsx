@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { Box, Button, Flex, Heading, Icon, Image, Input, InputGroup, InputLeftElement, Link, Text } from '@chakra-ui/core';
+import { Box, Flex, Heading, Image, Link, Text } from '@chakra-ui/core';
 
 import InputWithIcon from '../components/input/InputWithIcon';
+import SolidButton from '../components/button/SolidButton';
 
 const IndexPage = () => (
     <Flex direction='row' height='100%'>
@@ -35,9 +36,9 @@ const IndexPage = () => (
                 <Text color='petcode.blue.400' fontSize='lg' alignSelf='flex-end' margin={0}>
                     <Link>Forgot Password?</Link>
                 </Text>
-                <Button size='lg' variantColor='petcode.blue' variant='solid' border='none' rounded='full' width='100%' marginTop={3} height='57px'> 
+                <SolidButton variantColor='petcode.blue' marginTop={3}> 
                     <Text fontSize='xl' fontWeight='thin' textTransform='uppercase'>Sign In</Text>
-                </Button>
+                </SolidButton>
                 <Text color='petcode.neutral.500' fontSize='lg'>
                     Don't have an account yet?{ ' ' }
                     <Link color='petcode.blue.400'>
