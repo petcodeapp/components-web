@@ -45,7 +45,7 @@ const LoginForm = () => (
         <Text color='petcode.blue.400' fontSize='lg' alignSelf='flex-end'>
             <Link>Forgot Password?</Link>
         </Text>
-        <SolidButton variantColor='petcode.blue' marginTop={3}> 
+        <SolidButton variantColor='petcode.blue' marginY={3}> 
             <Text fontSize='xl' fontWeight='thin' textTransform='uppercase'>Sign In</Text>
         </SolidButton>
         <Text color='petcode.neutral.500' fontSize='lg'>
