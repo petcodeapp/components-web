@@ -42,8 +42,16 @@ const IndexPage = () => (
                 </Text>
             </Flex>
         </Flex>
-        <Flex direction='column' flexBasis='720px' flexShrink={1} overflow='hidden'>
-            <Image alt='Dogs on yellow wall' src='/media/dogs-on-yellow-wall.png' width='720px' maxHeight='100vh'/>
+        <Flex
+            direction='column' flexBasis='720px' flexShrink={1} alignItems='center' justifyContent='center'
+            backgroundImage='url(/media/dogs-on-yellow-wall.png)' backgroundPosition='top'
+        >
+            <Box flexGrow={1}/>
+            <Image alt='PetCode Logo' src='/media/petcode-logo.png'/>
+            <Heading color='petcode.neutral.700' fontSize='4xl' fontWeight='thin' textAlign='center' marginX='24'>
+                One Code. An endless suite of features for pet owners.
+            </Heading>
+            <Box flexGrow={3}/>
         </Flex>
     </Flex>
 );
