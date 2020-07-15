@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Box, Button, Flex, Heading, Icon, Input, InputGroup, InputLeftElement, Link, Text } from '@chakra-ui/core';
+import { Box, Button, Flex, Heading, Icon, Image, Input, InputGroup, InputLeftElement, Link, Text } from '@chakra-ui/core';
 
 const IndexPage = () => (
     <Flex direction='row' height='100%'>
-        <Flex direction='column' flexBasis='50%' alignItems='center' justifyContent='center' paddingX='32'>
+        <Flex direction='column' flexGrow={1} flexBasis='calc(50% - 96px)' alignItems='center' justifyContent='center' marginX='32'>
             <Text color='petcode.neutral.400' fontSize='2xl' fontWeight='bold' textTransform='uppercase' margin={0}>
                 Welcome to
             </Text>
@@ -31,10 +31,10 @@ const IndexPage = () => (
                 <Text color='petcode.blue.400' fontSize='lg' alignSelf='flex-end' margin='0'>
                     <Link>Forgot Password?</Link>
                 </Text>
-                <Button size='lg' variantColor='petcode.blue' variant='solid' border='none' rounded='full' width='100%' marginY='3' height='57px'> 
+                <Button size='lg' variantColor='petcode.blue' variant='solid' border='none' rounded='full' width='100%' marginTop='3' height='57px'> 
                     <Text fontSize='xl' fontWeight='thin' textTransform='uppercase'>Sign In</Text>
                 </Button>
-                <Text fontSize='lg'>
+                <Text color='petcode.neutral.500' fontSize='lg'>
                     Don't have an account yet?{ ' ' }
                     <Link color='petcode.blue.400'>
                         Sign Up
@@ -42,8 +42,8 @@ const IndexPage = () => (
                 </Text>
             </Flex>
         </Flex>
-        <Flex direction='column' flexBasis='50%'>
-
+        <Flex direction='column' flexBasis='720px' flexShrink={1} overflow='hidden'>
+            <Image alt='Dogs on yellow wall' src='/media/dogs-on-yellow-wall.png' width='720px' maxHeight='100vh'/>
         </Flex>
     </Flex>
 );
