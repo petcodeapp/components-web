@@ -27,6 +27,10 @@ html, body, #root {
     width: 100%;
 }
 
+p {
+    margin: 0;
+}
+
 input::placeholder {
     color: #CBD5E0;
 }
