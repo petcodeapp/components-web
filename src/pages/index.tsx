@@ -11,7 +11,7 @@ const IndexPage = () => (
             <Text color='petcode.neutral.400' fontSize='2xl' fontWeight='bold' textTransform='uppercase' margin={0}>
                 Welcome to
             </Text>
-            <Box fontSize={ { xs: '6xl', md: 'logo' } }>
+            <Box fontSize={ { xs: '6xl', md: '7xl', lg: '8xl' } }>
                 <Heading as='span' color='petcode.yellow' fontSize='inherit' margin={0}>
                     Pet
                 </Heading>
@@ -50,7 +50,7 @@ const IndexPage = () => (
         <Flex
             display={ { xs: 'none', lg: 'flex' } }
             flexDir='column' flexBasis='720px' flexShrink={1} alignItems='center' justifyContent='center'
-            backgroundImage='url(/media/dogs-on-yellow-wall.png)' backgroundPosition='top'
+            backgroundImage='url(/media/dogs-on-yellow-wall.png)' backgroundPosition='center'
         >
             <Box flexGrow={1}/>
             <Image alt='PetCode Logo' src='/media/petcode-logo.png'/>

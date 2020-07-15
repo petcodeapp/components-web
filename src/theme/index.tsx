@@ -11,7 +11,9 @@ export default {
     },
     fontSizes: {
         ...theme.fontSizes,
-        logo: '125px'
+        '7xl': '84px',
+        '8xl': '108px',
+        '9xl': '136px'
     },
     fontWeights: {
         ...theme.fontWeights,
