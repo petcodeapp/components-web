@@ -22,7 +22,7 @@ const IndexPage = () => (
             <Text color='petcode.neutral.600' fontSize={ { xs: 'xl', md: '3xl' } } fontWeight='thin' textAlign='center' lineHeight='shorter' margin={0}>
                 Log in to view and update your pet profile with the latest information.
             </Text>
-            <Flex direction='column' alignItems='center' width={ { xs: '90%', md: '65%' } } marginY={3}>
+            <Flex direction='column' alignItems='center' width={ { xs: '90%', sm: '65%' } } marginY={3}>
                 <InputWithIcon
                     iconName='username'
                     inputGroupProps={ { width: '100%', marginY: 2 } }
